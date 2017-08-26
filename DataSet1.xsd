@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TradeData" msprop:Generator_TableClassName="TradeDataDataTable" msprop:Generator_TableVarName="tableTradeData" msprop:Generator_TablePropName="TradeData" msprop:Generator_RowDeletingName="TradeDataRowDeleting" msprop:Generator_RowChangingName="TradeDataRowChanging" msprop:Generator_RowEvHandlerName="TradeDataRowChangeEventHandler" msprop:Generator_RowDeletedName="TradeDataRowDeleted" msprop:Generator_UserTableName="TradeData" msprop:Generator_RowChangedName="TradeDataRowChanged" msprop:Generator_RowEvArgName="TradeDataRowChangeEvent" msprop:Generator_RowClassName="TradeDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TradeID" msprop:Generator_ColumnVarNameInTable="columnTradeID" msprop:Generator_ColumnPropNameInRow="TradeID" msprop:Generator_ColumnPropNameInTable="TradeIDColumn" msprop:Generator_UserColumnName="TradeID" type="xs:string" minOccurs="0" />
+              <xs:element name="TradeDate" msprop:Generator_ColumnVarNameInTable="columnTradeDate" msprop:Generator_ColumnPropNameInRow="TradeDate" msprop:Generator_ColumnPropNameInTable="TradeDateColumn" msprop:Generator_UserColumnName="TradeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Symbol" msprop:Generator_ColumnVarNameInTable="columnSymbol" msprop:Generator_ColumnPropNameInRow="Symbol" msprop:Generator_ColumnPropNameInTable="SymbolColumn" msprop:Generator_UserColumnName="Symbol" type="xs:string" minOccurs="0" />
+              <xs:element name="Strike" msprop:Generator_ColumnVarNameInTable="columnStrike" msprop:Generator_ColumnPropNameInRow="Strike" msprop:Generator_ColumnPropNameInTable="StrikeColumn" msprop:Generator_UserColumnName="Strike" type="xs:int" minOccurs="0" />
+              <xs:element name="MarketPrice" msprop:Generator_ColumnVarNameInTable="columnMarketPrice" msprop:Generator_ColumnPropNameInRow="MarketPrice" msprop:Generator_ColumnPropNameInTable="MarketPriceColumn" msprop:Generator_UserColumnName="MarketPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="Notional" msprop:Generator_ColumnVarNameInTable="columnNotional" msprop:Generator_ColumnPropNameInRow="Notional" msprop:Generator_ColumnPropNameInTable="NotionalColumn" msprop:Generator_UserColumnName="Notional" type="xs:int" minOccurs="0" />
+              <xs:element name="Result" msprop:Generator_ColumnVarNameInTable="columnResult" msprop:Generator_ColumnPropNameInRow="Result" msprop:Generator_ColumnPropNameInTable="ResultColumn" msprop:Generator_UserColumnName="Result" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:TradeData" />
+      <xs:field xpath="mstns:TradeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
